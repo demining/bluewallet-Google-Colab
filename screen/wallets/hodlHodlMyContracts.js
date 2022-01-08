@@ -48,7 +48,7 @@ export default class HodlHodlMyContracts extends Component {
   async componentDidMount() {
     const hodlApiKey = await this.context.getHodlHodlApiKey();
     const hodlApi = new HodlHodlApi(hodlApiKey);
-    this.setState({ hodlApi: hodlApi, contracts: [] });
+    this.setState({ hodlApi, contracts: [] });
 
     const inverval = setInterval(async () => {
       await this.refetchContracts();
@@ -152,7 +152,7 @@ export default class HodlHodlMyContracts extends Component {
 
     contracts = contracts.sort((a, b) => (a.created_at >= b.created_at ? -1 : 1)); // new contracts on top
 
-    this.setState({ hodlApi: hodlApi, contracts, contractToDisplay, isLoading: false });
+    this.setState({ hodlApi, contracts, contractToDisplay, isLoading: false });
   }
 
   _onContractPress(contract) {

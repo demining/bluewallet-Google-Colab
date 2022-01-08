@@ -40,7 +40,7 @@ module.exports = (title, text, isCancelable = true, type = 'secure-text', isOKDe
         ];
 
     prompt(title, text, buttons, {
-      type: type,
+      type,
       cancelable: isCancelable,
       keyboardType,
     });

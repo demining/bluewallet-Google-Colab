@@ -179,7 +179,7 @@ export default class HodlHodl extends Component {
     this.setState({ HodlApi, hodlApiKey });
     this.props.navigation.setParams({
       handleLoginPress: this.handleLoginPress,
-      displayLoginButton: displayLoginButton,
+      displayLoginButton,
       handleMyContractsPress: this.handleMyContractsPress,
     });
 

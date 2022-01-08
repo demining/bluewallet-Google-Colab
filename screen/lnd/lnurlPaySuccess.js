@@ -118,7 +118,7 @@ export default class LnurlPaySuccess extends Component {
                   this.props.navigation.navigate('ScanLndInvoiceRoot', {
                     screen: 'LnurlPay',
                     params: {
-                      lnurl: lnurl,
+                      lnurl,
                       walletID: this.state.fromWalletID,
                     },
                   });

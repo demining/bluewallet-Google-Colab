@@ -14,9 +14,8 @@ import { FiatUnit } from './models/fiatUnit';
 import { MultisigHDWallet } from './class';
 
 function WatchConnectivity() {
-  const { walletsInitialized, wallets, fetchWalletTransactions, saveToDisk, txMetadata, preferredFiatCurrency } = useContext(
-    BlueStorageContext,
-  );
+  const { walletsInitialized, wallets, fetchWalletTransactions, saveToDisk, txMetadata, preferredFiatCurrency } =
+    useContext(BlueStorageContext);
   const isReachable = useReachability();
   const isInstalled = useInstalled(); // true | false
   const messagesListenerActive = useRef(false);
@@ -209,7 +208,7 @@ function WatchConnectivity() {
         balance: formatBalance(Number(wallet.getBalance()), wallet.getPreferredBalanceUnit(), true),
         type: wallet.type,
         preferredBalanceUnit: wallet.getPreferredBalanceUnit(),
-        receiveAddress: receiveAddress,
+        receiveAddress,
         transactions: watchTransactions,
         hideBalance: wallet.hideBalance,
       };

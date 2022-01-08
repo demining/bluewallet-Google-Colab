@@ -425,7 +425,7 @@ const WalletsAddMultisigStep2 = () => {
           navigation.navigate('ScanQRCodeRoot', {
             screen: 'ScanQRCode',
             params: {
-              onBarScanned: onBarScanned,
+              onBarScanned,
               showFileImportButton: true,
             },
           }),
