@@ -133,8 +133,8 @@ export class AbstractHDWallet extends LegacyWallet {
       let txs = [];
       try {
         txs = await BlueElectrum.getTransactionsByAddress(address);
-      } catch (Err) {
-        console.warn('BlueElectrum.getTransactionsByAddress()', (Err as Error).message);
+      } catch (Err: any) {
+        console.warn('BlueElectrum.getTransactionsByAddress()', Err.message);
       }
       if (txs.length === 0) {
         // found free address
@@ -171,8 +171,8 @@ export class AbstractHDWallet extends LegacyWallet {
       let txs = [];
       try {
         txs = await BlueElectrum.getTransactionsByAddress(address);
-      } catch (Err) {
-        console.warn('BlueElectrum.getTransactionsByAddress()', (Err as Error).message);
+      } catch (Err: any) {
+        console.warn('BlueElectrum.getTransactionsByAddress()', Err.message);
       }
       if (txs.length === 0) {
         // found free address
