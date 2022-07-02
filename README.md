@@ -138,7 +138,10 @@ Bugs reported via BugSnag
 <a href="https://www.bugsnag.com"><img src="https://images.typeform.com/images/QKuaAssrFCq7/image/default" width="160px"></a>
 
 
-## RESPONSIBLE DISCLOSURE
 
-Found critical bugs/vulnerabilities? Please email them bluewallet@bluewallet.io
-Thanks!
+----
+
+|  | Donation Address |
+| --- | --- |
+| ♥ __BTC__ | 1Lw2kh9WzCActXSGHxyypGLkqQZfxDpw8v |
+| ♥ __ETH__ | 0xaBd66CF90898517573f19184b3297d651f7b90bf |
